@@ -76,6 +76,7 @@ body {
 }
 
 @media (max-width: 768px) {
+  
   .burger {
     display: flex;
   }
@@ -94,10 +95,11 @@ body {
   .nav-links.active {
     display: flex;
   }
+  
 }
 
 .landing-page {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 70vh;
   overflow: hidden;
@@ -111,8 +113,9 @@ body {
 
 .cover-image {
   display: flex;
-  width: 200%; /* Two images side by side */
+  width: 200%; 
   height: 100%;
+  
   transition: transform 0.5s ease-in-out;
 }
 
@@ -121,6 +124,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 
 button.prev, button.next {
   position: absolute;
@@ -131,6 +135,12 @@ button.prev, button.next {
   border: none;
   padding: 10px;
   cursor: pointer;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+.slider-container:hover button.prev,
+.slider-container:hover button.next {
+  opacity: 1;
 }
 
 button.prev {
@@ -143,4 +153,33 @@ button.next {
 
 button.prev:hover, button.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    height: 30vh; 
+  }
+
+  .cover-image {
+    width: 200%;
+    height: 50vh; 
+  }
+
+  .cover-image img {
+    width: 50%;
+    height: 30vh;
+  }
+}
+@media (max-width: 500px) {
+  .landing-page {
+    height: 25vh; 
+  }
+
+  .cover-image {
+    height: 40vh;
+  }
+
+  .cover-image img {
+    height: 25vh; 
+  }
 }
