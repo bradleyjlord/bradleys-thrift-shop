@@ -1,7 +1,7 @@
 {
-  "name": "lordys-thrift-shop",
+  "name": "bradleys-thrift-shop",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +9,18 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.4.8"
-  }
+    "vite": "^5.4.14"
+  },
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradleyjlord/bradleys-thrift-shop.git"
+  },
+  "author": "bradley jlord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradleyjlord/bradleys-thrift-shop/issues"
+  },
+  "homepage": "https://github.com/bradleyjlord/bradleys-thrift-shop#readme",
+  "description": ""
 }

@@ -1,48 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/main-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/images/main-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Bradley's Thrift Shop</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="logo">
-          <a href="#"><img src="images/main-logo.png" alt="Lordy's Thrift Shop Logo"></a>
-          <h1>Bradley's Thrift Shop</h1>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="images/main-logo.png" alt="Bradley's Thrift Shop Logo">
+                <h1>Bradley's Thrift Shop</h1>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="burger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </div>
-    </nav>
+    </header>
 
-    <div class="landing-page">
-      <div class="slider-container">
-        <div class="cover-image">
-          <img src="images/chaewon-cover.png" alt="cover-image">
-          <img src="/images/felix-cover.png" alt="cover-image">
-        </div>
-
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-      </div>
-    </div>    
+    <main>
+        <section class="landing-page">
+            <div class="slider-container">
+                <div class="cover-image">
+                    <img src="images/chaewon-cover.png" alt="Chaewon cover image">
+                    <img src="images/felix-cover.png" alt="Felix cover image">
+                </div>
+                <button class="prev" aria-label="Previous slide">&#10094;</button>
+                <button class="next" aria-label="Next slide">&#10095;</button>
+            </div>
+        </section>
+    </main>
 
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
